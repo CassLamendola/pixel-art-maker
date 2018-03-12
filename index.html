@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<title>Pixel Art Maker</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Press+Start+2P|Quicksand" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -13,16 +13,16 @@
 		<h2 id="author">By: Cassandra Lamendola</h2>
 		<form class="size">
 			Width:
-			<input name="width" type="text">
+			<input name="width" type="number">
 			Height:
-			<input name="height" type="text">
-			<input type="submit" name="submit-size">
+			<input name="height" type="number">
+			<input type="submit" name="submit-size" id="submit-size">
 		</form>
 		<form class="color-picker">
 			Color:
 			<input type="color" name="pick-color">
 		</form>
-		<table></table>
+		<table id="canvas"></table>
 	</div>
 	<script type="text/javascript" src="pixelArtMaker.js"></script>
 </body>
